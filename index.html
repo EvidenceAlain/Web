@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eneko Hernández - Carpintería y Ebanistería a medida. Diseño, fabricación e instalación de proyectos en madera.">
+    <title>Eneko Hernández | Maestro Carpintero y Ebanistería a Medida</title>
+    
+    <!-- Enlace al CSS activado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-name">ENEKO HERNÁNDEZ</span>
+                <span class="logo-tagline">Carpintería & Ebanistería</span>
+            </a>
+
+            <button id="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav id="main-nav" class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#maderas" class="nav-link">Maderas</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#proceso" class="nav-link">El Taller</a></li>
+                    <li><a href="#presupuesto" class="nav-link btn-cta-nav">Pedir Presupuesto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / PORTADA -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <p class="hero-badge">Artesanía en madera hecha para durar</p>
+                <h1 class="hero-title">Damos forma a tus ideas en madera noble y a medida</h1>
+                <p class="hero-description">
+                    Desde mobiliario exclusivo y armarios empotrados hasta reformas integrales en madera. Precisión de taller, acabados impecables y montaje limpio en tu hogar.
+                </p>
+                <div class="hero-actions">
+                    <a href="#presupuesto" class="btn btn-primary">Solicitar presupuesto sin compromiso</a>
+                    <a href="#proyectos" class="btn btn-secondary">Ver trabajos realizados</a>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong class="stat-number" data-target="25">+25</strong>
+                    <span class="stat-label">Años de oficio</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="stat-number" data-target="500">+500</strong>
+                    <span class="stat-label">Proyectos entregados</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="stat-number" data-target="100">100%</strong>
+                    <span class="stat-label">Diseño a medida</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section services">
+            <div class="section-header">
+                <span class="section-subtitle">Especialidades</span>
+                <h2 class="section-title">Soluciones en madera para cada espacio</h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">01</div>
+                    <h3 class="service-title">Mobiliario y Ebanistería a Medida</h3>
+                    <p class="service-text">Mesas de comedor en madera maciza, estanterías, cabeceros y muebles de salón diseñados milímetro a milímetro.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">02</div>
+                    <h3 class="service-title">Armarios, Vestidores y Cocinas</h3>
+                    <p class="service-text">Aprovechamiento total del espacio con interiores personalizados, herrajes de cierre suave y acabados de alta resistencia.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">03</div>
+                    <h3 class="service-title">Puertas, Suelos y Revestimientos</h3>
+                    <p class="service-text">Instalación de tarimas, parquet, puertas de paso macizas o correderas, frisos y escaleras a medida.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">04</div>
+                    <h3 class="service-title">Estructuras y Exterior</h3>
+                    <p class="service-text">Porches, pérgolas, cerramientos y cubiertas con maderas tratadas para resistir la humedad y el paso del tiempo.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SELECTOR INTERACTIVO DE MADERAS -->
+        <section id="maderas" class="section wood-selector">
+            <div class="section-header">
+                <span class="section-subtitle">Materia Prima</span>
+                <h2 class="section-title">Explora nuestras maderas</h2>
+            </div>
+
+            <div class="wood-interactive-wrapper">
+                <div class="wood-tabs" role="tablist">
+                    <button class="wood-tab active" role="tab" data-wood="roble">Roble Europeo</button>
+                    <button class="wood-tab" role="tab" data-wood="nogal">Nogal Americano</button>
+                    <button class="wood-tab" role="tab" data-wood="castano">Castaño</button>
+                    <button class="wood-tab" role="tab" data-wood="haya">Haya Vaporizada</button>
+                </div>
+
+                <div id="wood-display" class="wood-display-panel" role="tabpanel">
+                    <div class="wood-info">
+                        <h3 id="wood-name">Roble Europeo</h3>
+                        <p id="wood-desc">Dureza excepcional y veta marcada. Ideal para mesas principales, suelos, escaleras y muebles que buscan carácter y máxima durabilidad.</p>
+                        <ul class="wood-specs">
+                            <li><strong>Dureza:</strong> Muy alta</li>
+                            <li><strong>Tono:</strong> Dorado medio a tostado</li>
+                            <li><strong>Uso ideal:</strong> Mesas macizas, suelos, puertas y mobiliario estructural</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE PROYECTOS -->
+        <section id="proyectos" class="section portfolio">
+            <div class="section-header">
+                <span class="section-subtitle">Trabajos Recientes</span>
+                <h2 class="section-title">Obras que hablan por sí solas</h2>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="mobiliario">Mobiliario</button>
+                <button class="filter-btn" data-filter="armarios">Armarios y Cocinas</button>
+                <button class="filter-btn" data-filter="estructuras">Suelos y Estructuras</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-item" data-category="mobiliario">
+                    <div class="portfolio-img-placeholder" data-img="mesa-roble"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Mesa de comedor en Roble Macizo</h3>
+                        <p>Ebanistería a medida · Acabado al aceite natural</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="armarios">
+                    <div class="portfolio-img-placeholder" data-img="vestidor-nogal"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Vestidor Abierto con Iluminación LED</h3>
+                        <p>Carpintería interior · Optimización de espacio</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="estructuras">
+                    <div class="portfolio-img-placeholder" data-img="escalera-volada"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Escalera Volada y Revestimiento Mural</h3>
+                        <p>Obra en madera · Diseño continuo</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-category="armarios">
+                    <div class="portfolio-img-placeholder" data-img="cocina-medida"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Frentes de Cocina e Isla en Madera Natural</h3>
+                        <p>Cocinas · Herrajes de alta gama</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EL TALLER Y PROCESO DE TRABAJO -->
+        <section id="proceso" class="section process">
+            <div class="section-header">
+                <span class="section-subtitle">Cómo trabaja Eneko Hernández</span>
+                <h2 class="section-title">Del boceto en el taller al montaje en tu casa</h2>
+            </div>
+
+            <ol class="process-steps">
+                <li class="step-item">
+                    <span class="step-number">1</span>
+                    <h3>Visita y Medición</h3>
+                    <p>Nos desplazamos para tomar medidas exactas, evaluar el espacio y asesorarte sobre la mejor solución técnica y estética.</p>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">2</span>
+                    <h3>Propuesta y Selección de Materiales</h3>
+                    <p>Elegimos juntos el tipo de madera, los tableros, los barnices y los herrajes con un presupuesto claro y detallado.</p>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">3</span>
+                    <h3>Fabricación Artesanal en Taller</h3>
+                    <p>Cortamos, ensamblamos y damos el acabado a cada pieza en el taller para garantizar ajustes milimétricos.</p>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">4</span>
+                    <h3>Instalación Rápida y Limpia</h3>
+                    <p>Llevamos todo preparado para que el montaje en tu vivienda sea ágil, cuidadoso y sin molestias innecesarias.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- FORMULARIO / CALCULADOR DE PRESUPUESTO -->
+        <section id="presupuesto" class="section contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="section-subtitle">Contacto directo</span>
+                    <h2 class="section-title">Cuéntanos qué tienes en mente</h2>
+                    <p>Tanto si tienes las medidas claras como si solo tienes una idea, escríbenos y Eneko te asesorará personalmente.</p>
+                    
+                    <ul class="contact-details">
+                        <li><strong>Responsable:</strong> Eneko Hernández</li>
+                        <li><strong>Teléfono / WhatsApp:</strong> <a href="tel:+34600000000">+34 600 000 000</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:contacto@enekohernandez.com">contacto@enekohernandez.com</a></li>
+                        <li><strong>Horario de atención:</strong> Lunes a Viernes de 8:00 a 19:00</li>
+                    </ul>
+                </div>
+
+                <form id="budget-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo-proyecto">¿Qué tipo de trabajo necesitas?</label>
+                        <select id="tipo-proyecto" name="tipo-proyecto" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="armario-vestidor">Armario empotrado / Vestidor</option>
+                            <option value="mueble-medida">Mueble a medida (mesa, estantería, salón)</option>
+                            <option value="puertas-suelos">Puertas, suelos o escaleras</option>
+                            <option value="cocina">Carpintería de cocina</option>
+                            <option value="exterior">Porche, pérgola o exterior</option>
+                            <option value="otro">Otro proyecto / Reparación</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Detalles del proyecto (medidas aproximadas, idea, plazos...)</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej: Necesito un armario a medida de unos 2.40m de ancho para una habitación..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar solicitud a Eneko</button>
+                    <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <p class="logo-name">ENEKO HERNÁNDEZ</p>
+                <p>Carpintería y Ebanistería a medida. Oficio, precisión y madera de primera calidad.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Carpintería Eneko Hernández. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al JavaScript activado -->
+    <script src="app.js"></script>
+</body>
+</html>
